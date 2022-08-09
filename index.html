@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="css/libreria.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <div>
+    <div id="contenido" >
+      <header>
+        <h1>Cotizá el seguro de tu auto</h1>
+      </header>
+      <form action="#" id="cotizar-seguro">
+        <div class="elegir">
+          <label for="marca">Marca:</label>
+          <select id="marca">
+            <option value="">- Seleccionar -</option>
+            <option value="1">Americano</option>
+            <option value="2">Asiatico</option>
+            <option value="3">Europeo</option>
+          </select>
+        </div>
+        <div class="elegir">
+          <label  for="year">Año:</label>
+          <select id="año"></select>
+        </div>
+        <fieldset class="tipo">
+
+          <legend>Tipo Seguro</legend>
+          <div class="tipo-seguro">
+            <div class="elegir-seguro">
+              <label>Básico</label>
+              <input type="radio" name="tipo" value="basico" checked>
+              </label>
+            </div>
+            <div class="elegir-seguro">
+              <label>Completo</label>
+              <input type="radio" name="tipo" value="completo">
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div id="cargando" class="hidden animacion">
+          <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div id="resultado"></div>
+        <div class="boton">
+          <button type="submit">Cotizar
+          </button>
+        </div>
+
+      </form>
+    </div>
+    <!--#contenido-->
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
